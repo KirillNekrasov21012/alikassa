@@ -1,0 +1,10 @@
+services:
+  nginx:
+    ports:
+      - "80:80"
+    volumes:
+      - ../docker/nginx/local:/etc/nginx/conf.d
+
+  postgres:
+    ports:
+      - "5432:5432"
